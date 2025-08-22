@@ -1,6 +1,6 @@
-# Secret Message Encryptor & Decryptor
+### Secret Message Encryptor & Decryptor
 
-#### This project helps you send secret messages to your friend using  encryption🔏
+##### This project helps you send secret messages to your friend using  encryption🔏(Built with Flask)
 
 #### Use case:-
 1. Ask the user if they want to {E}ncrypt or (D)encrypt a message 
