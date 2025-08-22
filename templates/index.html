@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caesar Cipher GUI</title>
+    <link rel="stylesheet"
+    href = "{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <h1>Caesar Cipher</h1>
+    <form method="post">
+        <label for="mode">Mode:</label>
+        <select name="mode" id="mode">
+            <option value="E">Encrypt</option>
+            <option value="D">Decrypt</option>
+        </select>
+
+        <label for="text">Message:</label>
+        <textarea name="text" id="text"></textarea>
+
+        <label for="key">Key (1–25):</label>
+        <input type="number" name="key" id="key" min="1" max="25" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if output is not none %}
+    <h2>Result:</h2>
+    <pre>{{ output }}</pre>
+    {% endif %}
+</body>
+
+</html>
